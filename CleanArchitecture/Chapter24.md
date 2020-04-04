@@ -1,4 +1,4 @@
-# Chapter 24 - 元件
+# Chapter 24 - 部分邊界
 
 全面性的架構邊界代價是昂貴的，在設計上也會因為預想某個地方可能需要一個邊界，而預先的為這個邊界保留一個位置，但這樣子的設計違反了YAGNI原則(You Aren't Going to Need it 你還不需要他)，這種情況下，我們就會需要部分邊界(partial boundary)
 
