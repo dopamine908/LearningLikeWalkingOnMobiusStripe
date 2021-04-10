@@ -35,3 +35,4 @@
 - https://picsum.photos/id/153/800/600
 - https://picsum.photos/id/178/800/600
 - https://picsum.photos/id/190/800/600
+- https://picsum.photos/id/61/800/600
