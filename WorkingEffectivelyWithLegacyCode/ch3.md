@@ -17,18 +17,18 @@
 
 假設在一個POS系統中有一個 Sale 類別(如下圖)，Sale中含有一個 scan 的 function，當我們要掃條碼的時候就會呼叫這個 function，並且呼叫之後會在收銀機上顯示商品的名稱及價格。
 
-![](https://i.imgur.com/dih0v3p.png)
+![](/WorkingEffectivelyWithLegacyCode/resource/ch3/3-1.png)
 
 
 那麼我們該如何對這個function去作測試呢?如果收銀機的顯示也寫在這個 function 裡面(直接依賴於硬體)，那我們會很難感測功能是否正常，所以在這邊我們可以嘗試先將收銀機獨立出來，調整為下圖的樣子。
 
-![](https://i.imgur.com/YFWHZlh.png)
+![](/WorkingEffectivelyWithLegacyCode/resource/ch3/3-2.png)
 
 我們新加入了一個 ArtR56Display 類別，該類別包含收銀機顯示器的所有功能程式碼。使用 ArtR56Display 的時候，我們只需要將我們想顯示的文字給 ArtR56Display 裡面負責顯示的 function 即可。
 
 再來我們將 ArtR56Display 中負責顯示的 function 提取 interface 出來，改成下圖的設計
 
-![](https://i.imgur.com/JviOp12.jpg)
+![](/WorkingEffectivelyWithLegacyCode/resource/ch3/3-3.jpg)
 
 如此一來，Sale 現在不只可以跟 ArtR56Display 合作，還可以跟任何有時作 Display 這個 interface 的類別合作，所以我們在這裡加上一個 FakeDisplay，讓他扮演偽物件的腳色。
 
