@@ -142,8 +142,8 @@ $Operator->operate(1, 2);
 
 ## 類別圖
 
-![](https://i.imgur.com/IWkEej1.png)
-![](https://i.imgur.com/4wtEDiU.png)
+![](/DesignPattern/Creational/resource/FactoryMethodPattern-1.png)
+![](/DesignPattern/Creational/resource/FactoryMethodPattern-2.png)
 
 ### Plant UML
 

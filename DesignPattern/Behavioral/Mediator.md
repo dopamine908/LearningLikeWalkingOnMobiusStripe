@@ -5,11 +5,11 @@
 當很多物件互相需要協作的時候，物件間的耦合關係常常會變得比較混亂
 假設我們有三個國家的人在共同會議上需要傳訊息，但因為語言的隔閡，他們只能私訊另外兩個國家的人，並且貼上他們翻譯過後的文字，他們的互動關係會像下面這樣
 
-![](https://i.imgur.com/VBat4ev.png)
+![](/DesignPattern/Behavioral/resource/MediatorPattern-1.png)
 
 但是如果今天有一個相當厲害的翻譯人員協助的話，我們就只要將自己的話告訴翻譯人員，他就會幫我們翻譯並且轉述給另外兩個國家的人了，加入了翻譯人員的互動關係會像下面這樣
 
-![](https://i.imgur.com/PidI6vP.png)
+![](/DesignPattern/Behavioral/resource/MediatorPattern-2.png)
 
 讓某個腳色在中間為各種物件做協調，這就是仲介者模式的初始的想法
 
@@ -199,7 +199,7 @@ $Mediator->sendToOther('All', $assert_message);
 
 ## 類別圖
 
-![](https://i.imgur.com/kpgeCSP.png)
+![](/DesignPattern/Behavioral/resource/MediatorPattern-3.png)
 
 ### Plant UML
 

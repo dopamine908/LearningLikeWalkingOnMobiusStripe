@@ -65,7 +65,7 @@ $CheckoutCounter->pay();
 
 ### 類別圖
 
-![](https://i.imgur.com/JCIKm8R.png)
+![](/DesignPattern/SOLID/resource/DIP-1-1.png)
 
 #### plant uml
 
@@ -172,7 +172,7 @@ $CheckoutCounter->payByMobile(); //行動支付
 
 ### 類別圖
 
-![](https://i.imgur.com/pUV6zjg.png)
+![](/DesignPattern/SOLID/resource/DIP-1-2.png)
 
 #### plant uml
 
@@ -300,7 +300,7 @@ $CheckoutCounter->pay();
 ```
 ### 類別圖
 
-![](https://i.imgur.com/GBOANzW.png)
+![](/DesignPattern/SOLID/resource/DIP-1-3.png)
 
 #### plant uml
 
@@ -358,7 +358,7 @@ Mobile .up.|> IPayment : Implements Interface
 
 ### 類別圖
 
-![](https://i.imgur.com/LGI8bnE.png)
+![](/DesignPattern/SOLID/resource/DIP-1-4.png)
 
 #### plant uml
 

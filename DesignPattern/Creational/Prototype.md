@@ -221,7 +221,7 @@ class MacBook2RAM
 
 ## 類別圖
 
-![](https://i.imgur.com/PC7euN5.png)
+![](/DesignPattern/Creational/resource/PrototypePattern-1.png)
 
 
 ### Plant UML

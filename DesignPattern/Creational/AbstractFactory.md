@@ -84,7 +84,7 @@ $PayService->payByMobile();
 
 #### 類別圖
 
-![](https://i.imgur.com/CECSgIQ.png)
+![](/DesignPattern/Creational/resource/AbstractFactoryPattern-1.png)
 
 
 #### Plant UML
@@ -212,7 +212,7 @@ $PayService->payByMobile();
 
 #### 類別圖
 
-![](https://i.imgur.com/8LAOE7K.png)
+![](/DesignPattern/Creational/resource/AbstractFactoryPattern-2.png)
 
 #### Plant UML
 
@@ -349,7 +349,7 @@ $PayService->payByMobile()
 
 #### 類別圖
 
-![](https://i.imgur.com/GzGtXHI.png)
+![](/DesignPattern/Creational/resource/AbstractFactoryPattern-3.png)
 
 #### Plant UML
 
@@ -478,7 +478,7 @@ $PayService->payByMobile();
 
 #### 類別圖
 
-![](https://i.imgur.com/T6rJiA3.png)
+![](/DesignPattern/Creational/resource/AbstractFactoryPattern-4.png)
 
 
 #### Plant UML
@@ -683,7 +683,7 @@ $PayService->payByMobile();
 
 #### 類別圖
 
-![](https://i.imgur.com/U3CkT7k.png)
+![](/DesignPattern/Creational/resource/AbstractFactoryPattern-5.png)
 
 
 #### Plant UML
@@ -760,7 +760,7 @@ IBankServiceFactory .up.> IMobilePayment : create
 
 ## 類別圖
 
-![](https://i.imgur.com/LnFEMC9.png)
+![](/DesignPattern/Creational/resource/AbstractFactoryPattern-6.png)
 
 ### Plant UML
 

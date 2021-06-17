@@ -118,7 +118,7 @@ $MainCompany->add($SubCompanyBDepartmentB);
 
 透過這樣的過程可以建構出像下圖的結構
 
-![](https://i.imgur.com/Xy6KaDR.png)
+![](/DesignPattern/Structural/resource/CompositePattern-1.png)
 
 ### Plant UML
 
@@ -171,7 +171,7 @@ B_DepartmentB --> Employee6
 
 ## 類別圖
 
-![](https://i.imgur.com/OhnzkDl.png)
+![](/DesignPattern/Structural/resource/CompositePattern-2.png)
 
 ### Plant UML
 

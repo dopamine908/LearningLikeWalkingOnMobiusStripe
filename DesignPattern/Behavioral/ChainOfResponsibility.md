@@ -126,7 +126,7 @@ $CEO->handleTrouble($BigTrouble);
 
 ## 類別圖
 
-![](https://i.imgur.com/KHBXlfD.png)
+![](/DesignPattern/Behavioral/resource/ChainOfResponsibilityPattern-1.png)
 
 ### Plant UML
 
