@@ -4,7 +4,7 @@
 
 在 PHP8 官方的 release 網頁中，看到一個似乎更新風險相當大的一個改動，如圖
 
-![](https://i.imgur.com/4gvt25C.png)
+![](/Other/resource/PHP8ReleaseNoteStringToNumberComparison-1.png)
 
 同樣的比對會回傳不一樣的結果，感覺很可能導致很多產品的比較或是套件內的比較失效。
 我對於這樣的差異性感到好奇，照常理來說 PHP8 的結果會比較貼近於直覺，而 PHP8 以前為什麼會是那樣的結果呢? PHP8 做的這種更動，影響的範圍會不會比想像中還要更大呢?
@@ -37,7 +37,7 @@ PHP 將比較的運算子分為兩種:
 這也就是為什麼在 PHP8 以前， ```0 == 'foobar'``` 會得到 ```true``` 的結果。
 這個是數字與字串的例子，當然 PHP 中我們可以將很多不同型別的變數去進行比對，而各種不同的型別配對也都有自己不同的判別方式，詳細如下圖([來源](https://www.php.net/manual/en/language.operators.comparison.php))
 
-![](https://i.imgur.com/wWmwXgL.png)
+![](/Other/resource/PHP8ReleaseNoteStringToNumberComparison-2.png)
 
 ```
 弱型別的語言(如:JS、PHP)在各種比對的運算上面都有一套自己預設的規則，
