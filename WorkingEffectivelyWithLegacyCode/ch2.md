@@ -58,7 +58,7 @@
 
 讓我們來看一個範例，如下圖，我們想要修改 InvoiceUpdateResponder 的 getResponseText() 以及 Invoice 的 getValue()，對於這些變動的部分，我們想透過為他們撰寫單元測試來將他們覆蓋。
 
-![](https://i.imgur.com/VT1vdQa.jpg)
+![](/WorkingEffectivelyWithLegacyCode/resource/ch2/2-1.jpg)
 
 
 接下來讓我們來觀察一下要為他們撰寫單元測試的時候可能會遇到的狀況，我們會透過測試框架去建立這些 class 的實例，並對裡面的 function 去測試
@@ -81,7 +81,7 @@
 
 那麼遇到這些問題的時候該怎麼辦呢?在這個例子中，書上介紹了**樸素化參數**(Primitivize Parameter，401頁)、**介面提取**(Extract Interface，377頁)幾種方法，在本書後面會有篇幅詳細說明如何去解決這樣的問題，這裡就先不提及，而修改完的結構大概會向下圖。
 
-![](https://i.imgur.com/yGYvffN.jpg)
+![](/WorkingEffectivelyWithLegacyCode/resource/ch2/2-2.jpg)
 
 ## 遺留程式碼修改演算法
 
