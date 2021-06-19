@@ -30,7 +30,7 @@ MySQL : 8.0
 
 如下圖，簡單示意了一下從放入工作到 Redis ，再到拿工作去處理的流程
 
-![](https://i.imgur.com/BgXxhtD.png)
+![](/Laravel/resource/ScheduleToJob_pt1_Job-1.png)
 
 底下我們一個一個階段的去詳細解說
 
@@ -167,7 +167,7 @@ Route::get(
 
 只要用上面的語法，就可以輕易的將 Job 給派發到 redis 內，派發完之後 redis 裡面的內容會像是這樣
 
-![](https://i.imgur.com/BvuMc4e.png)
+![](/Laravel/resource/ScheduleToJob_pt1_Job-2.png)
 
 到這邊其實就算是派發完成了，接下來就等待這些工作被執行。
 
@@ -189,7 +189,7 @@ Route::get(
 
 只要我們加上了 ```onQueue('QueueName')``` 就可以將 Job 派發到指定的地方，派發完的結果如下
 
-![](https://i.imgur.com/zN4tcJ2.png)
+![](/Laravel/resource/ScheduleToJob_pt1_Job-3.png)
 
 另外，如果除了 redis 以外我們還有不同的儲存載體的話，我們也可以在派發的時候指定要連接的地方，語法如下
 
@@ -207,7 +207,7 @@ Route::get(
 
 這個部分主要做的事情就是將我們寫好的 Job 給放到 redis 內，像是下圖這樣
 
-![](https://i.imgur.com/aZjo3K0.png)
+![](/Laravel/resource/ScheduleToJob_pt1_Job-4.png)
 
 ### 如何執行
 
@@ -267,7 +267,7 @@ php artisan queue:work --timeout=30
 
 指令執行起來大致上會像下圖般運作
 
-![](https://i.imgur.com/7otJg6g.png)
+![](/Laravel/resource/ScheduleToJob_pt1_Job-5.png)
 
 ### 失敗了怎麼辦？
 
@@ -352,7 +352,7 @@ Route::get(
 
 執行完之後我們會看到 redis 裡面多了新的 Job 等待被執行，如圖
 
-![](https://i.imgur.com/o25etM2.png)
+![](/Laravel/resource/ScheduleToJob_pt1_Job-6.png)
 
 到這邊就表示了我們已經將待辦的事情放到 redis 了
 
@@ -366,7 +366,7 @@ php artisan queue:work
 
 然後我們可以看到下面的畫面，的確我們寫在 handle() 內的工作有被正常執行
 
-![](https://i.imgur.com/1KQ2MMK.png)
+![](/Laravel/resource/ScheduleToJob_pt1_Job-7.png)
 
 ### 錯誤處理
 
@@ -383,15 +383,15 @@ public function handle()
 
 再執行一次指令之後，會看到錯誤的告知
 
-![](https://i.imgur.com/hmCkAh1.png)
+![](/Laravel/resource/ScheduleToJob_pt1_Job-8.png)
 
 而且在資料庫的 failed_jobs 表中可以看到詳細的錯誤訊息
 
-![](https://i.imgur.com/a2zxOQa.png)
+![](/Laravel/resource/ScheduleToJob_pt1_Job-9.png)
 
 總結來說整理的流程串接起來大概上會像下面這張圖一樣
 
-![](https://i.imgur.com/2W8LeXW.png)
+![](/Laravel/resource/ScheduleToJob_pt1_Job-10.png)
 
 ## Reference
 

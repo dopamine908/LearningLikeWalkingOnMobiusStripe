@@ -10,7 +10,7 @@
 
 在設計上會讓大家共同實作某個讓執行者可以執行的介面，例如 ```handle()``` ， 底下看一下大致上的示意圖
 
-![](https://i.imgur.com/KHBXlfD.png)
+![](/Laravel/resource/Pipeline-1.png)
 
 所以說，為什麼會提到職責練模式呢？
 

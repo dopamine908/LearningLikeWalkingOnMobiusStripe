@@ -386,7 +386,7 @@ if ($RssFeederTrigger->isRssHasNewMessage()) { // always true
 
 最後我們就可以在 slack 的 channel 裡面看到
 
-![](https://i.imgur.com/406OsOS.png)
+![](/Laravel/resource/Notification-1.png)
 
 ## Reference
 
