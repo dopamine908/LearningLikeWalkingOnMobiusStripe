@@ -135,7 +135,7 @@ $Originator->getAction(); // return 'press c'
 
 ## 類別圖
 
-![](https://i.imgur.com/DSGJ5QA.png)
+![](/DesignPattern/Behavioral/resource/MementoPattern-1.png)
 
 ### Plant UML
 

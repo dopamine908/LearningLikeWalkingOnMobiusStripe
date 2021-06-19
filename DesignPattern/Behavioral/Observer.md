@@ -119,7 +119,7 @@ $Notifications = $SomeOnesChannel->notify();
 
 而當我們去關心這個通知機制的類別圖我們會發現，YoutubeChannel類別與通知類別處於一種基於實體類別的強依賴狀態。
 
-![](https://i.imgur.com/zsTpCOe.png)
+![](/DesignPattern/Behavioral/resource/ObserverPattern-1.png)
 
 #### Plant UML
 
@@ -275,7 +275,7 @@ class Bells implements IObserver
 
 透過這種方式重新整理之後，我們可以看到我們的類別關係有了改變，實體的相依變成以interface為基底去做依賴，我們通知者與被通知者之間的依賴給抽象化了
 
-![](https://i.imgur.com/PqutOwb.png)
+![](/DesignPattern/Behavioral/resource/ObserverPattern-2.png)
 
 #### Plant UML
 
@@ -341,7 +341,7 @@ ISubject -right-> IObserver : notify(update)
 
 ## 類別圖
 
-![](https://i.imgur.com/hwLF7wQ.png)
+![](/DesignPattern/Behavioral/resource/ObserverPattern-3.png)
 
 
 ### Plant UML
@@ -437,7 +437,7 @@ data.subscribe({
 
 其架構的類別圖大概長得像式這樣(僅示意)
 
-![](https://i.imgur.com/LpINzzT.png)
+![](/DesignPattern/Behavioral/resource/ObserverPattern-4.png)
 
 
 #### Plant UML
