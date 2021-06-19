@@ -264,13 +264,13 @@ class Kernel extends ConsoleKernel
 
 我們使用 ```call()``` 直接將我們想做的事情寫在 closure 內，這邊大致上用 ```echo``` 代表我們已經寄信了，而後面的時間頻率我們用 ```->everyMinute()``` 設定每分鐘執行，最後在 Local 環境上我們用 ```php artisan schedule:work``` 去模擬 crontab 的每分鐘執行，結果會如下
 
-![](https://i.imgur.com/nH9PT7p.png)
+![](/Laravel/resource/ScheduleToJob_pt3_schedule-1.png)
 
 我們可以從上方的圖看到每一分鐘的00秒，代表寄信的 ```echo``` 被執行了
 
 整體的流程大致上會像是這樣
 
-![](https://i.imgur.com/ZZfyji4.png)
+![](/Laravel/resource/ScheduleToJob_pt3_schedule-2.png)
 
 ## Reference
 
