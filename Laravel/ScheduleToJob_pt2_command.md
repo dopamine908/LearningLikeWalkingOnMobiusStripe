@@ -173,7 +173,7 @@ protected $commands = [
 
 接著當我們將所有的指令列出來的時候就會看到我們剛剛寫的 Artisan Command 了
 
-![](https://i.imgur.com/1Uxpo8X.jpg)
+![](/Laravel/resource/ScheduleToJob_pt2_command-1.jpg)
 
  ## 執行
  
@@ -183,7 +183,7 @@ protected $commands = [
  
  就像我們一般在下 Artisan 指令一樣，我們只要輸入 ```php artisan edm:send``` 就可以執行了，如圖
  
- ![](https://i.imgur.com/ujAW5qD.png)
+ ![](/Laravel/resource/ScheduleToJob_pt2_command-2.png)
 
 ### 在程式中執行
 
@@ -227,7 +227,7 @@ public function handle()
 
 以上執行起來會像下圖
 
-![](https://i.imgur.com/9u3r1ge.png)
+![](/Laravel/resource/ScheduleToJob_pt2_command-3.png)
 
 ### option 選項
 
@@ -275,7 +275,7 @@ public function handle()
 
 這樣子我們在看指令的 help 的時候就可以看到我們寫的說明
 
-![](https://i.imgur.com/RZgjaz6.png)
+![](/Laravel/resource/ScheduleToJob_pt2_command-4.png)
 
 ### 取得選項的輸入值
 
@@ -399,15 +399,15 @@ protected $commands = [
 
 之後我們便可以在黑窗內看到註冊成功的 Artisan Command 
 
-![](https://i.imgur.com/1Uxpo8X.jpg)
+![](/Laravel/resource/ScheduleToJob_pt2_command-1.jpg)
 
 而且可以 ```-h``` 看到他使用的方法
 
-![](https://i.imgur.com/RZgjaz6.png)
+![](/Laravel/resource/ScheduleToJob_pt2_command-4.png)
 
 最後我們來執行一下吧
 
-![](https://i.imgur.com/AxBrWy6.png)
+![](/Laravel/resource/ScheduleToJob_pt2_command-5.png)
 
 ## Reference
 
