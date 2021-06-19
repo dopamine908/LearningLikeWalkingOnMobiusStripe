@@ -238,7 +238,7 @@ Route::get(
 
 然後我們瀏覽這個網址測試一下觸發的效果如何
 
-![](https://i.imgur.com/vx8ozg8.png)
+![](/Laravel/resource/ScheduleToJob_pt4_teamwork-1.png)
 
 不錯，看起來有成功的被新增進去了
 
@@ -254,11 +254,11 @@ Route::get(
 php artisan queue:work --tries=1
 ```
 
-在開發時候，筆者會很習慣的使用 ```--tries=1``` 這個設定，這樣才不會導致當初錯的時候 queue 一直 retry 
+在開發時候，筆者會很習慣的使用 ```--tries=1``` 這個設定，這樣才不會導致當初錯的時候 queue 一直 retry
 
-![](https://i.imgur.com/lSDeySF.png)
+![](/Laravel/resource/ScheduleToJob_pt4_teamwork-2.png)
 
-![](https://i.imgur.com/qkigYce.png)
+![](/Laravel/resource/ScheduleToJob_pt4_teamwork-3.png)
 
 測試成功！
 
@@ -374,15 +374,15 @@ class Kernel extends ConsoleKernel
 
 接下來我們就可以在 Artisan 內看到註冊過的 Command 了
 
-![](https://i.imgur.com/GwzgYfv.png)
+![](/Laravel/resource/ScheduleToJob_pt4_teamwork-4.png)
 
 ## 再測試一下
 
 接下來我們要實際下指令測試看看，在 ```php artisan queue:work --tries=1``` 有啟動運作的時候，下完指令之後應該會有一個 Job 被派發到 redis 並且會立刻被 queue 給拿去處理
 
-![](https://i.imgur.com/jevHUH3.png)
+![](/Laravel/resource/ScheduleToJob_pt4_teamwork-5.png)
 
-![](https://i.imgur.com/m9afn3q.png)
+![](/Laravel/resource/ScheduleToJob_pt4_teamwork-6.png)
 
 不錯，一切都有如我們預期的運作
 
@@ -448,9 +448,9 @@ class Kernel extends ConsoleKernel
 
 接下來我們要測試看看整個流程是否安好且順暢，我們要用 ```php artisan schedule:work``` 代替 ```php artisan schedule:run``` 來模擬觸發，並期望每分鐘 ```edm:send``` 的指令都被觸發
 
-![](https://i.imgur.com/GLcZXFH.png)
+![](/Laravel/resource/ScheduleToJob_pt4_teamwork-7.png)
 
-![](https://i.imgur.com/o5Wk4Rp.png)
+![](/Laravel/resource/ScheduleToJob_pt4_teamwork-8.png)
 
 放置了五分鐘之後看起來結果相當成功，到這邊整個流程算是已經完成。
 
@@ -458,5 +458,5 @@ class Kernel extends ConsoleKernel
 
 花了不少功夫去建立整個功能，最後我們來看一張整個流程的示意圖，讓一切可以更明朗一些
 
-![](https://i.imgur.com/ZGpTS6H.png)
+![](/Laravel/resource/ScheduleToJob_pt4_teamwork-9.png)
 
